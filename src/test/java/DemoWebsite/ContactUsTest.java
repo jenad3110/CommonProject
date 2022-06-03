@@ -21,7 +21,7 @@ public class ContactUsTest extends CommonAPI {
         click("#contact-link > a");
 
         type("#id_contact","Costumer service");
-        waitFor(5);
+        waitFor(3);
 
 
     }
