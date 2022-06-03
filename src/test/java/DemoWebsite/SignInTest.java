@@ -41,7 +41,7 @@ public class SignInTest extends CommonAPI {
         type("#email_create","test@gmail.com");
 
         click("#SubmitCreate > span");
-        waitFor(2);
+        waitFor(3);
         String EmailAlreadyExist = driver.findElement(By.cssSelector("#create_account_error > ol > li")).getText();
         Assert.assertEquals(EmailAlreadyExist,"An account using this email address has already been registered. Please enter a valid password or request a new one.");
 
