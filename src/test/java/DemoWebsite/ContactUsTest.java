@@ -5,32 +5,67 @@ import org.testng.annotations.Test;
 
 public class ContactUsTest extends CommonAPI {
 
-
-
-
-
-
-
-
-
-
     @Test
-    public void SelectItemByColor() {
+    public void ContactUs() {
 
-        click("#homefeatured > li.ajax_block_product.col-xs-12.col-sm-4.col-md-3.first-in-line.first-item-of-tablet-line.first-item-of-mobile-line > div > div.left-block > div > a.product_img_link > img");
-        waitFor(4);
-        click("#wishlist_button");
-        //click("#thumb_4");
-        hoverOver("#thumb_4");
-//        waitFor(2);
-//        click("#color_13");
+        click("#contact-link > a");
+
+        type("#id_contact", "Webmaster");
+        waitFor(5);
 
     }
+
+    @Test
+    public void ContactUs2() {
+
+        click("#contact-link > a");
+
+        type("#id_contact","Costumer service");
+        waitFor(5);
+
+
+    }
+
+
+
 //    @Test
-//    public void SelectItemBySize() {
-//    click("#homefeatured > li.ajax_block_product.col-xs-12.col-sm-4.col-md-3.first-in-line.first-item-of-tablet-line.first-item-of-mobile-line > div > div.left-block > div > a.product_img_link > img");
-//    waitFor(3);
-//        type("#group_1", "S");
+//    public void SelectSubMenuFromWomenSection2() {
 //
+//        hoverOver("#block_top_menu > ul > li:nth-child(1) > a");
+//        click("//*[@id=\"block_top_menu\"]/ul/li[1]/ul/li[1]/ul/li[2]/a");
+//        hoverOver("#center_column > ul > li > div > div.left-block > div > a.product_img_link > img");
+//        click("#center_column > ul > li > div > div.right-block > div.button-container > a.button.ajax_add_to_cart_button.btn.btn-default > span");
+//
+//    }
+
+//        @Test
+//        public void SelectSubMenuFromWomenSection3() {
+//
+//            hoverOver("#block_top_menu > ul > li:nth-child(1) > a");
+//            click("//*[@id=\"block_top_menu\"]/ul/li[1]/ul/li[1]/ul/li[1]/a");
+//            hoverOver("#center_column > ul > li > div > div.left-block > div > a.product_img_link > img");
+//            click("#center_column > ul > li > div > div.right-block > div.button-container > a.button.ajax_add_to_cart_button.btn.btn-default > span");
+//        }
+//            @Test
+//            public void SelectSubMenuFromWomenSection4() {
+//
+//                hoverOver("#block_top_menu > ul > li:nth-child(1) > a");
+//                click("//*[@id=\"block_top_menu\"]/ul/li[1]/ul/li[2]/ul/li[1]/a");
+//                hoverOver("#center_column > ul > li > div > div.left-block > div > a.product_img_link > img");
+//                click("#center_column > ul > li > div > div.right-block > div.button-container > a.button.ajax_add_to_cart_button.btn.btn-default > span");
+//            }
+
+//                @Test
+//                public void SelectSubMenuFromWomenSection5() {
+//
+//                    hoverOver("#block_top_menu > ul > li:nth-child(1) > a");
+//                    click("//*[@id=\"block_top_menu\"]/ul/li[1]/ul/li[2]/ul/li[2]/a");
+//                    hoverOver("#center_column > ul > li > div > div.left-block > div > a.product_img_link > img");
+//                    click("#center_column > ul > li > div > div.right-block > div.button-container > a.button.ajax_add_to_cart_button.btn.btn-default > span");
+//                }
+
+
+
+
 
 }
